@@ -65,15 +65,10 @@ BROADCAST_COMMAND = get_config("BROADCAST_COMMAND", "broadcast")
 # default message in-case of None types
 DEFAULT_START_TEXT = (
     "Hi. ☺️\n"
-    "Thank you for using me 😬\n\n"
-    "This is an Open Source Project available on "
-    "https://github.com/SpEcHIDe/NoPMsBot\n\n\n"
-    "If you are the owner of this bot, "
-    "and are seeing this message 🤦‍♂️, "
-    "means that you have not set up "
-    "the ENVironment variables properly "
-    "for the bot to function.\n\n\n"
-    "ℹ️ Subscribe @SpEcHlDe if you 😍 using this bot❗️❣️"
+    "Terimakasih sudah menghubungi kami melalui Bot CS ini, apa yang dapat kami bantu? 🙏!\n\n"
+    "\n\n"
+    "https://jlldev.my.id\n\n\n"
+    "ℹ️ Subscribe @mboyzt_official if you want to subscribe from our channel❗️❣️"
 )
 # /start message when other users start your bot
 START_OTHER_USERS_TEXT = int(get_config(
@@ -84,11 +79,10 @@ START_OTHER_USERS_TEXT = int(get_config(
 ONLINE_CHECK_START_TEXT = get_config(
     "ONLINE_CHECK_START_TEXT",
     (
-        "i am online <b>master</b>\n\n"
-        "This is an Open Source Project available on "
-        "https://github.com/SpEcHiDe/NoPMsBot\n\n\n"
-        "ℹ️ Subscribe @SpEcHlDe if you 😍 using this bot❗️❣️"
-    )
+        "Kami online <b>boss</b>\n\n"
+        "\n\n\n"
+    "ℹ️ Subscribe @mboyzt_official if you want to subscribe from our channel❗️❣️"
+)
 )
 # message to indicate,
 # if any message was deleted by the user
@@ -96,11 +90,10 @@ ONLINE_CHECK_START_TEXT = get_config(
 DELETED_MESSAGES_NOTIFICATION_TEXT = get_config(
     "DELETED_MESSAGES_NOTIFICATION_TEXT",
     (
-        "this message was deleted\n\n"
-        "This is an Open Source Project available on "
-        "https://github.com/SpEcHiDe/NoPMsBot\n\n\n"
-        "ℹ️ Subscribe @SpEcHlDe if you 😍 using this bot❗️❣️"
-    )
+        "pesan ini telah dihapus\n\n"
+    "\n\n"
+    "ℹ️ Subscribe @mboyzt_official if you want to subscribe from our channel❗️❣️"
+)
 )
 # IDEKWBYRW
 DERP_USER_S_TEXT = get_config(
@@ -111,8 +104,8 @@ DERP_USER_S_TEXT = get_config(
 IS_BLACK_LIST_ED_MESSAGE_TEXT = get_config(
     "IS_BLACK_LIST_ED_MESSAGE_TEXT",
     (
-        "You have been <b>banned</b> forever.\n\n"
-        "<u>Reason</u>: <code>{reason}</code>"
+        "kamu di <b>blokir</b> selama-lamanya.\n\n"
+        "<u>Alasan</u>: <code>{reason}</code>"
     )
 )
 # IDEKWBYRW
@@ -124,14 +117,14 @@ REASON_DE_LIMIT_ER = get_config(
 IS_UN_BANED_MESSAGE_TEXT = get_config(
     "IS_UN_BANED_MESSAGE_TEXT",
     (
-        "You have been <b>un-banned</b>.\n\n"
-        "<u>Reason</u>: <code>{reason}</code>"
+        "Anda sudah <b>tidak diblokir</b>.\n\n"
+        "<u>Alasan</u>: <code>{reason}</code>"
     )
 )
 # message to show if bot was blocked by user
 BOT_WS_BLOCKED_BY_USER = get_config(
     "BOT_WS_BLOCKED_BY_USER",
-    "Bot was blocked by the user."
+    "Bot diblokir oleh pengguna."
 )
 # path to store LOG files
 LOG_FILE_ZZGEVC = get_config("LOG_FILE_ZZGEVC", "NoPMsBot.log")
@@ -144,7 +137,7 @@ logging.basicConfig(
         RotatingFileHandler(
             LOG_FILE_ZZGEVC,
             maxBytes=50000000,
-            backupCount=10
+            backupCount=100
         ),
         logging.StreamHandler()
     ]
