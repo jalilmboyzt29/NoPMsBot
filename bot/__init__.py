@@ -65,10 +65,7 @@ BROADCAST_COMMAND = get_config("BROADCAST_COMMAND", "broadcast")
 # default message in-case of None types
 DEFAULT_START_TEXT = (
     "Hi. ☺️\n"
-    "Terimakasih sudah menghubungi kami melalui Bot CS ini, apa yang dapat kami bantu? 🙏!\n\n"
-    "\n\n"
-    "https://jlldev.my.id\n\n\n"
-    "ℹ️ Subscribe @mboyzt_official if you want to subscribe from our channel❗️❣️"
+    
 )
 # /start message when other users start your bot
 START_OTHER_USERS_TEXT = int(get_config(
@@ -80,9 +77,7 @@ ONLINE_CHECK_START_TEXT = get_config(
     "ONLINE_CHECK_START_TEXT",
     (
         "Kami online <b>boss</b>\n\n"
-        "\n\n\n"
-    "ℹ️ Subscribe @mboyzt_official if you want to subscribe from our channel❗️❣️"
-)
+        )
 )
 # message to indicate,
 # if any message was deleted by the user
@@ -91,9 +86,8 @@ DELETED_MESSAGES_NOTIFICATION_TEXT = get_config(
     "DELETED_MESSAGES_NOTIFICATION_TEXT",
     (
         "pesan ini telah dihapus\n\n"
-    "\n\n"
-    "ℹ️ Subscribe @mboyzt_official if you want to subscribe from our channel❗️❣️"
-)
+    
+    )
 )
 # IDEKWBYRW
 DERP_USER_S_TEXT = get_config(
